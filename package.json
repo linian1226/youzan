@@ -2,7 +2,6 @@
   "name": "maijia",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "tony <fangtao_2008@163.com>",
   "private": true,
   "homepage":"https://linian1226.github.io/youzan/dist"
   "scripts": {
