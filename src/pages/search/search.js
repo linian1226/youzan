@@ -31,7 +31,7 @@ new Vue({
         getSearchList(){
             if(this.allLoaded) return 
             this.loading = true //开始出现加载
-            axios.post(url.searchList,{keyword,id}).then(res =>{
+            axios.get(url.searchList,{keyword,id}).then(res =>{
                 var curLists = res.data.lists
                 //数据加载完毕
                 if(curLists.length < this.pageSize){

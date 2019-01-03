@@ -38,7 +38,7 @@ new Vue({
     },
     methods:{
         getDetails(){
-            axios.post(url.details,{id}).then(res => {
+            axios.get(url.details,{id}).then(res => {
                 this.details = res.data.data
                 this.bannerLists = []
                 this.details.imgs.forEach(item=>{
@@ -69,7 +69,7 @@ new Vue({
             this.skuNum += num
         },
         addCart(){
-            axios.post(url.addCart,{
+            axios.get(url.addCart,{
                 id,
                 number:this.skuNum
             }).then(res =>{

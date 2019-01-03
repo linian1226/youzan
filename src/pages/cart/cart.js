@@ -190,7 +190,7 @@ new Vue({
                 //     ids.push(good.id)
                 // })
                 Cart.remove(this.removeLists)
-                axios.post(url.cartMremove, {
+                axios.get(url.cartMremove, {
                     ids
                 }).then(res=>{
                     let arr = []

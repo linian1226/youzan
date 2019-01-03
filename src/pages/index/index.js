@@ -31,7 +31,7 @@ let app = new Vue({
         getLists(){
             if(this.allLoaded) return 
             this.loading = true //开始出现加载
-            axios.post(url.hotLists,{
+            axios.get(url.hotLists,{
                 pageNum:this.pageNum,
                 pageSize:this.pageSize
             }).then(res =>{

@@ -21,7 +21,7 @@ new Vue({
     },
     methods:{
         getTopList(){
-            axios.post(url.topList).then(res =>{
+            axios.get(url.topList).then(res =>{
                 this.topLists = res.data.lists
             })
         },
@@ -38,7 +38,7 @@ new Vue({
            
         },
         getRank(){//综合排行
-            axios.post(url.rank).then(res =>{
+            axios.get(url.rank).then(res =>{
                 this.rankData = res.data.data
             })           
         },

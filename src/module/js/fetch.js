@@ -2,7 +2,7 @@ import axios from 'axios'
 //所有数据请求有一个统一入口
 function fetch(url,data){
     return new Promise((resolve,reject) =>{
-        axios.post(url,data).then(res=>{
+        axios.get(url,data).then(res=>{
             let status = res.data.status
             // if(status === 200){
             //     resolve(res)
