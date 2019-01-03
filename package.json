@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "private": true,
-  "homepage":"https://linian1226.github.io/youzan/dist"
+  "homepage":"https://linian1226.github.io/youzan/dist",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
