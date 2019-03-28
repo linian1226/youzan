@@ -31,7 +31,7 @@ new Vue({
             if(index === 0){
                 this.getRank()
             }else{
-                axios.post(url.subList,{id}).then(res =>{
+                axios.get(url.subList,{id}).then(res =>{
                     this.subData = res.data.data
                 })
             }

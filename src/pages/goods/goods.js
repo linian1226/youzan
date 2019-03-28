@@ -56,7 +56,7 @@ new Vue({
             }
         },
         getDeal(){
-            axios.post(url.deal,{id}).then(res => {
+            axios.get(url.deal,{id}).then(res => {
                 this.dealLists = res.data.data.lists
             })
         },
